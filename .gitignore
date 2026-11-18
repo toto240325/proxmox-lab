@@ -1,0 +1,14 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Local secrets / env (none expected in this repo, but guard anyway)
+.env
+*.pem
+*.key

@@ -269,6 +269,3 @@ scripted/reproducible (`../scripts/`).
 | 2026-11-18 | Defender LAN IP pinned | Router-side DHCP reservation for MAC `BC:24:11:7B:A6:AB` → `192.168.0.212` stays stable on lease renewal. |
 | 2026-11-18 | Host rebooted onto new kernel | `pveversion` confirms `running kernel: 7.0.14-29-pve`. VMs 100/110/120/130 don't auto-start (no `onboot`), so they were started manually afterward; all came back healthy (Suricata/EveBox/dnsmasq active, all 3 targets reachable). VM 140 has `onboot: 1` and came back on its own. |
 
-**Explicitly out of scope:** installing/operating offensive AI pentest tooling
-("Artex"). The learning goal is reached with standard, well-understood tools
-(nmap, and if desired Metasploit/Kali) plus the Suricata detection loop.

@@ -87,15 +87,6 @@ git** (see section 7/8) — ask before committing, per section 8.
    Back up `/etc/network/interfaces` first. A timestamped backup from the `vmbr1` change
    exists at `/etc/network/interfaces.bak-20261116-014658` on the host.
 
-**Out of scope, by decision:** installing or operating "Artex" (an AI-assisted offensive
-pentest tool the owner mentioned). The agent declined because it couldn't identify the
-tool. It was described as actively attacking the owner's systems, which makes it
-operating offensive tooling rather than lab defense. The learning goal is reachable
-with standard tools (nmap, Metasploit, Kali) and the Suricata loop. Don't reopen this
-unless the owner raises it; if they do, hold the same line. The owner was also advised
-that if real company systems are under live attack, the urgent work is on those
-systems (logs, patching, credential rotation), and the lab doesn't replace it.
-
 ## 4. How to drive the environment
 
 **SSH needs the agent loaded first.** `sshagent` is a shell alias, and the
@@ -191,15 +182,11 @@ Owner said to do items 1-6 in sequence (skipping 7 for now). Status:
 7. Optional (explicitly deferred by owner): host `boot-windows` helper (section 6);
    reserve `192.168.0.8` in the router; Suricata/EveBox boot-time health checks.
 
-### VM 140 `redteam` — explicitly out of scope
-The owner created VM 140 (`redteam`) directly on the host, outside of this project's
+### VM 140 `redteam` 
+The owner created VM 140 (`redteam`) directly on the host, and we need to integrate it in this project's
 scripts and documentation. Its config (dual-homed: lab net `vmbr1` with firewall off,
-LAN `vmbr0` with firewall on, 12 GB RAM, 80 GB disk, UEFI) closely matches a build the
-agent was asked about and **declined** earlier in this project (an autonomous
-AI-assisted offensive pentest tool referred to as "Artex" — see the out-of-scope note
-in section 3). The owner confirmed they created VM 140 manually. The agent is not managing,
-provisioning, operating, or documenting what runs on VM 140, and should keep holding
-that line if asked again. This is noted here only so VM 140's existence on the host
+LAN `vmbr0` with firewall on, 12 GB RAM, 80 GB disk, UEFI) . The owner confirmed they created VM 140 manually. The agent must now learn  managing,
+provisioning, operating, and documenting what runs on VM 140. This is noted here only so VM 140's existence on the host
 isn't mistaken for an anomaly in a future session.
 
 ## 8. Repo conventions

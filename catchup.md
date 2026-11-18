@@ -32,9 +32,8 @@ Everything from the owner's 6-item list is done or in progress except:
   all the exploit traffic run so far, for the owner's learning.
 - [ ] **Windows/AD target** — not built. Would need a Windows ISO/license decision
   with the owner first.
-- [ ] **Commit + push** this repo (`proxmox-lab`) — scripts and docs are written but,
-  as of the start of this session, nothing had been committed yet. Check `git log`/
-  `git status` to see if this happened before the handoff.
+- [x] ~~Commit + push this repo~~ — **done** (2026-11-18). First commit `v0.2.0`,
+  tagged and pushed to `origin/main`. Working tree is clean.
 - [ ] Optional/deferred by owner choice: `boot-windows` helper, router reservation for
   `192.168.0.8` itself, Suricata/EveBox boot-time health checks (item 7, skipped on
   purpose).

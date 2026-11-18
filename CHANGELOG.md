@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-11-18
+
+- `catchup.md`: corrected the TL;DR checklist to reflect that this repo's
+  first commit/tag/push happened in this same session (self-reference fix,
+  no functional change to the lab).
+
 ## 0.2.0 — 2026-11-18
 
 - Added scan/recon detection to Suricata (`scripts/suricata/local.rules`) —
